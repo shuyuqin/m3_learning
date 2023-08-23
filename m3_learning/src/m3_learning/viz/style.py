@@ -63,3 +63,37 @@ def set_style(name="default"):
         plt.rcParams['legend.fontsize'] = 5
         plt.rcParams['legend.loc'] = "upper left"
         plt.rcParams['legend.frameon'] = False
+
+
+    if name == "slide":
+
+        try:
+            import seaborn as sns
+
+            # resetting default seaborn style
+            sns.reset_orig()
+
+            print(f"{name} set for seaborn")
+
+        except:
+            pass
+
+        import matplotlib.pyplot as plt
+        # setting default plotting params
+        plt.rcParams['axes.titlesize'] = 20
+        plt.rcParams['image.cmap'] = 'viridis'
+        plt.rcParams['axes.labelsize'] = 6
+        plt.rcParams['xtick.labelsize'] = 15
+        plt.rcParams['ytick.labelsize'] = 15
+        plt.rcParams['figure.titlesize'] = 8
+        plt.rcParams['xtick.direction'] = 'in'
+        plt.rcParams['ytick.direction'] = 'in'
+        plt.rcParams['xtick.top'] = True
+        plt.rcParams['ytick.right'] = True
+        plt.rcParams['lines.markersize'] = .5
+        plt.rcParams['axes.grid'] = False
+        plt.rcParams['lines.linewidth'] = .5
+        plt.rcParams['axes.linewidth'] = .5
+        plt.rcParams['legend.fontsize'] = 5
+        plt.rcParams['legend.loc'] = "upper left"
+        plt.rcParams['legend.frameon'] = False

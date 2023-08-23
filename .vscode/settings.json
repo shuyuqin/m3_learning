@@ -18,5 +18,8 @@
             "language": "python",
             "scheme": "vscode-notebook-cell"
         }
+    ],
+    "python.analysis.extraPaths": [
+        "./m3_learning/src"
     ]
 }
